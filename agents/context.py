@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
-"""FileGenerationContext - 追踪每轮文件生成的内容数据
-
-因为 xlsx/docx/pdf 等二进制文件无法"先读后改"，
-所以在上下文中保存每轮生成的 content JSON 数据。
-用户要求修改时，直接修改 JSON 数据后重新生成文件。
-"""
+# coding: utf-8 format
 
 
 class FileGenerationContext:

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8 format
 """AgentMonitor - 从 FirstAgent.py 提取，供协调者和子智能体共用"""
 from datetime import datetime
 from agentscope.event import EventType

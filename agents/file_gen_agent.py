@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-"""文件生成助手 - 基于 FileGenerator 工具生成和修改测试文件
-
-支持首次生成 + 基于上下文的增量修改 + 批量并发生成。
-
-性能优化：
-- stream=False: 关闭流式输出，API 一次性返回结果
-- thinking_enable=False: 显式禁用思考链（mimo-v2.5 服务端默认可能开启）
-- max_tokens=4096: 限制输出长度（工具调用 + "OK" 不需要长输出）
-- temperature=0: 确定性输出，工具调用场景不需要创造性
-"""
+# coding: utf-8 format
 import os
 
 from agentscope.agent import Agent

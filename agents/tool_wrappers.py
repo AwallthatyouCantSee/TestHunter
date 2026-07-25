@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8 format
 """协调者工具函数 - 封装子智能体为可被协调者调用的工具
 
 这些函数会被包装为 FunctionTool 并注册到协调者的 Toolkit 中，
