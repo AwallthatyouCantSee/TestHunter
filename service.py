@@ -1,10 +1,4 @@
 # coding: utf-8 format
-r"""Friday Agent Web 服务入口
-
-启动方式:
-    cd c:\code\testHunter
-    uvicorn service:app --host 0.0.0.0 --port 8000
-"""
 from __future__ import annotations
 import json as _json
 import os
