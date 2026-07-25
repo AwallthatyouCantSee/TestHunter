@@ -1,0 +1,13 @@
+# Core framework
+agentscope
+
+# Web service
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Storage
+redis>=5.0.0
+
+# Environment variables
+python-dotenv
