@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8 format
 r"""Friday Agent Web 服务入口
 
 启动方式:
