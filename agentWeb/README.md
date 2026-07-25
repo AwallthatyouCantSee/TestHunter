@@ -26,4 +26,4 @@ npm run dev
 npm run build
 ```
 
-构建产物输出到 `dist/` 目录。
+输出为 `dist/` 目录。
