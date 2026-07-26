@@ -12,11 +12,11 @@ description: 生成测试脚本、执行并生成结果报告
 2. 确认目标为后端 API 或 Web 前端，否则拒绝
 
 ## 执行流程
-1. 用 **Write** 工具在当前会话输出目录（见系统提示词中 `{{SESSION_DIR}}`）生成脚本
-   - 必须使用 Playwright 同步 API（`from playwright.sync_api import sync_playwright`）
-   - 独立 Python 脚本（无 pytest/unittest），每个用例 = 普通函数 + assert
-   - 脚本中所有字符串必须使用纯 ASCII 字符（仅英文和标点）
-   - 脚本输出信息时（例如 print）使用英文
+1. 用 **Write** 工具在当前会话输出目录(见系统提示词中 `{{SESSION_DIR}}`)生成脚本
+   - 必须使用 Playwright 同步 API(`from playwright.sync_api import sync_playwright`)
+   - 独立 Python 脚本(无 pytest/unittest)，每个用例 = 普通函数 + assert
+   - 脚本中所有字符串必须使用纯 ASCII 字符(仅英文和标点)
+   - 脚本输出信息时(例如 print)使用英文
    - 通过 Bash 执行 `python test_runner.py`
 2. 最多 3 轮修错重试，失败则向用户报告
    - 可能遇到的不可抗力错误：
@@ -30,5 +30,5 @@ description: 生成测试脚本、执行并生成结果报告
    c. 生成的文档必须放置在系统提示词中 `{{SESSION_DIR}}` 目录下
 
 ## 规则
-- 执行流程期间禁止验证环境（例如检查playwright是否安装，或检查输出文件夹是否存在等等），直接执行
-- Bash 命令必须使用 Windows 语法（dir、move、type、mkdir）
+- 执行流程期间禁止验证环境(例如检查playwright是否安装，或检查输出文件夹是否存在等等)，直接执行
+- Bash 命令必须使用 Windows 语法(dir、move、type、mkdir)
