@@ -185,18 +185,12 @@ Unlike the Read tool (which only reads plain text in UTF-8 mode), this tool can 
                 continue
 
             # Determine actual column count (ignore trailing None-only cols)
-            col_count = max(
-                (
-                    max(
-                        i + 1
-                        for i, c in enumerate(row)
-                        if c is not None
-                    )
-                    if row
-                    else 0
-                )
-                for row in rows
-            )
+            col_count = 1
+            for row in rows:
+                if row:
+                    non_none = [i + 1 for i, c in enumerate(row) if c is not None]
+                    if non_none:
+                        col_count = max(col_count, max(non_none))
             col_count = max(col_count, 1)
 
             shown = 0
