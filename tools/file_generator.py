@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """FileGenerator - 文件生成内置工具
 
 直接生成各种类型的文件：xlsx, docx, pdf, md, py, js, sql, java 等
